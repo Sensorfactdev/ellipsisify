@@ -3,8 +3,8 @@
 ## ellipsisify(str, cutoff, remain, [ellipsis]) ⇒ <code>string</code>
 ellipsisify
 
-**Kind**: global function
-**Returns**: <code>string</code> - ellipsisified string
+**Kind**: global function  
+**Returns**: <code>string</code> - ellipsisified string  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

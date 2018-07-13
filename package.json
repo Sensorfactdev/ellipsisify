@@ -11,7 +11,6 @@
   "scripts": {
     "test": "jest --coverage",
     "docs": "jsdoc2md ./lib/index.js > API.md",
-    "prepublish": "yarn test; yarn docs;",
     "test-travis": "yarn test && cat ./coverage/lcov.info | coveralls"
   },
   "main": "lib/index.js",
