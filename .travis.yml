@@ -1,15 +1,12 @@
 language: node_js
 
 node_js:
-  - "10"
+  - "9"
 
 cache:
   yarn: true
   directories:
     - "node_modules"
-
-before_script:
-  - yarn add coveralls
 
 script:
   - yarn test-travis
