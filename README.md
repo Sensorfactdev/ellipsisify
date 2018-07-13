@@ -1,5 +1,6 @@
 # ellipsisify
 [![Build Status](https://travis-ci.org/Sensorfactdev/ellipsisify.svg?branch=master)](https://travis-ci.org/Sensorfactdev/ellipsisify)
+[![Coverage Status](https://coveralls.io/repos/github/Sensorfactdev/ellipsisify/badge.svg?branch=master)](https://coveralls.io/github/Sensorfactdev/ellipsisify?branch=master)
 
 
 Add ellipses to strings in JavaScript
