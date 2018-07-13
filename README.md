@@ -1,4 +1,5 @@
 # ellipsisify
+[![npm version](https://badge.fury.io/js/%40sensorfactdev%2Fellipsisify.svg)](https://badge.fury.io/js/%40sensorfactdev%2Fellipsisify)
 [![Build Status](https://travis-ci.org/Sensorfactdev/ellipsisify.svg?branch=master)](https://travis-ci.org/Sensorfactdev/ellipsisify)
 [![Coverage Status](https://coveralls.io/repos/github/Sensorfactdev/ellipsisify/badge.svg?branch=master)](https://coveralls.io/github/Sensorfactdev/ellipsisify?branch=master)
 
