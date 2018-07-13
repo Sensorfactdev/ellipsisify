@@ -1,0 +1,9 @@
+test
+reports
+coverage
+.vscode
+.eslintrc
+.git
+.gitignore
+.travis
+logo.png
