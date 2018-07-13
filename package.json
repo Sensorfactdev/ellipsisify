@@ -1,0 +1,51 @@
+{
+  "name": "@sensorfactdev/ellipsisify",
+  "version": "0.1.0",
+  "description": "Add ellipses to strings in JavaScript",
+  "keywords": [
+    "ellipsis",
+    "ellipses",
+    "omission",
+    "falling short"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "docs": "jsdoc2md ./lib/index.js > API.md",
+    "prepublish": "yarn test; yarn docs;",
+    "test-travis": "yarn test && cat ./coverage/lcov.info | coveralls"
+  },
+  "main": "lib/index.js",
+  "repository": "git@github.com:Sensorfactdev/ellipsisify.git",
+  "author": "Ramon Gebben <ramon@sensorfact.nl>",
+  "license": "MIT",
+  "private": false,
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "testRegex": "./test/.*.js$",
+    "testPathIgnorePatterns": [
+      "./test/.*.fixtures.js$"
+    ]
+  },
+  "jest-junit": {
+    "suiteName": "ellipsisify",
+    "output": "./reports/junit.xml"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.1",
+    "eslint": "^5.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.4.0",
+    "jest-junit": "^5.1.0",
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
