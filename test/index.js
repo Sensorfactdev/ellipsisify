@@ -22,4 +22,12 @@ describe('ellipsisify', () => {
     expect(ellipsisify('longer string with ending', 10, 5))
       .toEqual('longer str...nding');
   });
+  it('should not add ellipsis in middle of a string when string is short', () => {
+    expect(ellipsisify('short', 10, 5))
+      .toEqual('short');
+  });
+  it('should not add ellipsis in middle of a string when string to short to ellipse', () => {
+    expect(ellipsisify('longer', 5, 5))
+      .toEqual('longer');
+  });
 });
