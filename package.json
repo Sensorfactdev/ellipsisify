@@ -14,7 +14,7 @@
     "docs": "jsdoc2md ./lib/index.js > API.md",
     "test-travis": "yarn test && cat ./coverage/lcov.info | coveralls"
   },
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:Sensorfactdev/ellipsisify.git",
   "author": "Ramon Gebben <ramon@sensorfact.nl>",
   "license": "MIT",
