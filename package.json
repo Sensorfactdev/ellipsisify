@@ -10,10 +10,11 @@
   ],
   "scripts": {
     "test": "jest --coverage",
+    "build": "babel ./src/index.js --out-file ./lib/index.js --presets @babel/preset-env",
     "docs": "jsdoc2md ./lib/index.js > API.md",
     "test-travis": "yarn test && cat ./coverage/lcov.info | coveralls"
   },
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:Sensorfactdev/ellipsisify.git",
   "author": "Ramon Gebben <ramon@sensorfact.nl>",
   "license": "MIT",
@@ -36,6 +37,9 @@
     "output": "./reports/junit.xml"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.1",
     "eslint": "^5.1.0",
     "eslint-config-standard": "^11.0.0",
