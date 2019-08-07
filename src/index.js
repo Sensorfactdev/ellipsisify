@@ -9,6 +9,11 @@
  * @returns {string} ellipsisified string
  */
 function ellipsisify(str, cutoff, remain, ellipsis = '...') {
+  const inputType = typeof str;
+  if (inputType !== 'string') {
+    throw new TypeError(`Expected type of input to be \`string\` but received \`${inputType}\``);
+  }
+
   if (str.length <= cutoff) return str;
   if (!cutoff || cutoff + remain >= str.length) return str;
   if (!remain) return `${str.substr(0, cutoff)}${ellipsis}`;
