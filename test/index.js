@@ -1,4 +1,4 @@
-const ellipsisify = require('../src');
+const ellipsisify = require('../lib');
 
 describe('ellipsisify', () => {
   it('should throws helpful error when no string is passed', () => {
