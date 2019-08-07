@@ -1,6 +1,9 @@
-const ellipsisify = require('../lib');
+const ellipsisify = require('../src');
 
 describe('ellipsisify', () => {
+  it('should throws helpful error when no string is passed', () => {
+    expect(() => ellipsisify(undefined, 1)).toThrow('Expected type of input to be `string` but received `undefined`');
+  });
   it('should return the string when length is <= cutoff position', () => {
     expect(ellipsisify('hat', 10)).toEqual('hat');
   });
